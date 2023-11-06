@@ -3,10 +3,9 @@
   margin: 0;
 }
 body {
-  display: grid;
-  justify-content: center;
   align-items: start;
   align-content: center;
+  display: grid;
   background: linear-gradient(to right, #581845, #900C3F, #C70039, #FF5733, #FFC305);
 }
 
@@ -34,26 +33,21 @@ nav li{
   margin-inline: 10px;
   }
 
-nav li:hover{
-  background-color:#fff;
-  color:#000;
- }
+  .containerMovie {
+    display: grid;
+    grid-template-columns: repeat(5, 6fr);
+    grid-gap: 50px;
+    margin: 100PX;
+  }
+   
+  .card {
+    padding: 20px;
+    text-align: center;
+    border: 10px solid #1f0a69;
+    background-color: #000;
+  }
 
-.card-movie {
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  background-color: #fff;
-}
-
-.card-movie:hover {
-  transform: scale(1.05);
-}
-
-img{
-  width: 20%;
-  height: 20%;
-}
+  h4 {
+    color: #fff;
+  }
 

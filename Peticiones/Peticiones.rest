@@ -2,3 +2,16 @@ curl --request GET \
      --url https://api.themoviedb.org/3/authentication \
      --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwZmMwZjFkZTA0N2ZjM2Y4Nzk0ZDI5NWQzYjg4ZGY4ZCIsInN1YiI6IjY1Mzc0MjUwYzUwYWQyMDEwY2UyN2Y1OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kJOKIu7N0Ah8T5AE_2wyfPtrIWmycCDrvBKHBTC06MA' \
      --header 'accept: application/json'
+
+
+###
+curl --request GET \
+     --url 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc' \
+     --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwZmMwZjFkZTA0N2ZjM2Y4Nzk0ZDI5NWQzYjg4ZGY4ZCIsInN1YiI6IjY1Mzc0MjUwYzUwYWQyMDEwY2UyN2Y1OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kJOKIu7N0Ah8T5AE_2wyfPtrIWmycCDrvBKHBTC06MA' \
+     --header 'accept: application/json'
+
+###
+curl --request GET \
+     --url 'https://api.themoviedb.org/3/search/movie?query=movie&include_adult=false&language=en-US&page=1' \
+     --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwZmMwZjFkZTA0N2ZjM2Y4Nzk0ZDI5NWQzYjg4ZGY4ZCIsInN1YiI6IjY1Mzc0MjUwYzUwYWQyMDEwY2UyN2Y1OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kJOKIu7N0Ah8T5AE_2wyfPtrIWmycCDrvBKHBTC06MA' \
+     --header 'accept: application/json'
